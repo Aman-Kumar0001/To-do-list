@@ -1,85 +1,128 @@
 /* body */
 
-body, html{
-    background: #1e272e;
-    margin: 0;
-    padding: 0;
-  }
-  body{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url('https://img.freepik.com/free-vector/abstract-classic-blue-screensaver_23-2148421853.jpg?w=1060&t=st=1716543991~exp=1716544591~hmac=b460fe03e07829f2610c42fe9dac26ef624d1089c7f6a7aabd45344f5ae13321');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .bgForm{
-    width: 400px;
-    height: 550px;
-    border-radius: 10px;
-    background-color: #1ce30a;
-  }
-
-.title{
-    color: white;
-    text-align: center;
+body,
+html {
+  background: #1e272e;
+  margin: 0;
+  padding: 0;
 }
-  .todoListByTidyCoder{
-    background: #ffbe76;
-    border-radius: 9px;
-    padding: 3px 7px 11px 7px;
-    max-height: 75vh;
-    width: 386px;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-  .todoListByTidyCoder > div:first-child{
-    display: flex;
-    position: sticky;
-    top: 0;
-    left: 0;
-  }
-  .todoListByTidyCoder > div:first-child > *{
-    border-radius: 5px;
-    padding: 9px;
-    border: 2px solid #f0932b;
-    margin: 3px;
-  }
-  .todoListByTidyCoder > div:first-child > button{
-    background: #f0932b;
-    border: none;
-    cursor: pointer;
-  }
-  .todoListByTidyCoder > div:first-child > button:hover{
-    background: #e74c3c;
-    border: none;
-  }
-  .todoListByTidyCoder > div:first-child > button:active{
-    background: #c0392b;
-    border: none;
-  }
-  .todoListByTidyCoder > div:last-child{
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-    padding: 0;
-    margin: 0;
-  }
-  .todoListByTidyCoder > div:last-child > div{
-    border: 1px solid black;
-    margin: 0;
-    padding: 0 3px 0 15px;
-    background: #ecf0f1;
-    word-break: break-word;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .todoListByTidyCoder > div:last-child > div > div > button{
-    border: none;
-    padding: 15px;
-    margin: 0;
-    border-radius: 50%;
-  }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('bg.avif');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgForm {
+  width: 335px;
+  height: 550px;
+  border-radius: 10px;
+  background-color: #5462b3a8;
+}
+
+.title {
+  color: white;
+  text-align: center;
+}
+
+.todoListByTidyCoder {
+  background: #2196f39e;
+  border-radius: 9px;
+  padding: 6px;
+  max-height: 75vh;
+  width: 320px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.todoListByTidyCoder>div:first-child {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.todoListByTidyCoder>div:first-child>* {
+  border-radius: 5px;
+  padding: 9px;
+  border: 2px solid #f0932b;
+  margin: 3px;
+}
+
+.todoListByTidyCoder>div:first-child>button {
+  background: #9e9e9ee0;
+  color: black;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.todoListByTidyCoder>div:first-child>button:hover {
+  background: #e74c3c;
+  border: none;
+}
+
+.todoListByTidyCoder>div:first-child>button:active {
+  background: #c0392b;
+  border: none;
+}
+
+.todoListByTidyCoder>div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 0;
+  margin: 0;
+}
+
+.todoListByTidyCoder>div:last-child>div {
+  border: 1px solid black;
+  margin: 0;
+  padding: 0 3px 0 15px;
+  background: #ecf0f1;
+  word-break: break-word;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todoListByTidyCoder>div:last-child>div>div>button {
+  border: none;
+  padding: 15px;
+  margin: 0;
+  border-radius: 50%;
+}
+
+input{
+  width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+#btn:hover,
+:focus {
+  color: #ffffff;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+    0 0 100px #008cff;
+}
